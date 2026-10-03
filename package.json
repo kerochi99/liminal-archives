@@ -1,0 +1,11 @@
+{
+  "name": "liminal-archives",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LIMINAL ARCHIVES — ルミナルスペースの記録を自動生成・公開する静的サイト",
+  "scripts": {
+    "generate": "node scripts/generate-space.js",
+    "serve": "node -e \"const {execSync}=require('child_process'); try{execSync('npx --yes serve .', {stdio:'inherit'})}catch(e){}\""
+  },
+  "license": "MIT"
+}

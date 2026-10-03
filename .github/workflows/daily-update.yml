@@ -1,0 +1,82 @@
+name: Daily Archive Update & Deploy
+
+# 毎日1回、新しい「視覚資料（レコード）」を自動生成してコミットし、
+# GitHub Pages へ再デプロイする。
+#
+# cron は UTC 基準。"0 15 * * *" は JST 翌日 0:00 に相当する。
+# 手動実行 (workflow_dispatch) にも対応。count 入力で生成数を指定できる。
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "生成する記録の件数"
+        required: false
+        default: "1"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate new record(s)
+        run: node scripts/generate-space.js --count "${{ github.event.inputs.count || '1' }}"
+
+      - name: Commit and push updated data
+        id: commit
+        run: |
+          git config user.name "liminal-archives-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/spaces.json; then
+            echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add data/spaces.json
+            git commit -m "chore: 自動生成された新しい視覚資料を追加"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout (latest)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

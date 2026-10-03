@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIMINAL ARCHIVES — 現実の隙間の記録</title>
+  <meta name="description" content="ルミナルスペース・バックルームズ・無人のノスタルジックな空間を記録するアーカイブ。毎日、新しい視覚資料が自動で追加されます。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%230d0f14%22/><rect x=%2210%22 y=%228%22 width=%2212%22 height=%2216%22 fill=%22none%22 stroke=%22%23d9c27a%22 stroke-width=%221%22/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">◻</span>
+        <span class="logo-text">LIMINAL ARCHIVES</span>
+      </a>
+      <p class="tagline">現実の隙間に存在する、どこでもない場所の記録</p>
+    </div>
+    <div class="scanline" aria-hidden="true"></div>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p>
+        ここに集められているのは、誰もいないはずの時間に撮られた、どこかで見たことがあるような空間の記録である。
+        記録は毎日、システムによって自動的に生成・追加される。すでに見た場所だと思っても、
+        同一のものは二つとして存在しない。
+      </p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="filters" aria-label="カテゴリフィルター">
+      <button class="filter-btn is-active" data-category="all">ALL / すべて</button>
+      <button class="filter-btn" data-category="corridor">廊下</button>
+      <button class="filter-btn" data-category="indoor">屋内</button>
+      <button class="filter-btn" data-category="outdoor">屋外</button>
+      <button class="filter-btn" data-category="night">夜間</button>
+    </section>
+
+    <section class="gallery" id="gallery" aria-live="polite">
+      <!-- カードはJSで生成 -->
+    </section>
+
+    <p class="empty-state" id="empty-state" hidden>該当する記録は見つかりませんでした。</p>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="閉じる">×</button>
+      <div class="modal-visual" id="modal-visual"></div>
+      <div class="modal-body">
+        <span class="modal-id" id="modal-id"></span>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-meta" id="modal-meta"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-tags" id="modal-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>LIMINAL ARCHIVES — 記録は自動生成されたフィクションです。すべての空間は架空の記憶の断片です。</p>
+    <p class="footer-sub">Last sync: <span id="last-sync">—</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
