@@ -402,6 +402,18 @@ main {
   border-radius: 2px;
 }
 
+.modal-attribution {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.68rem;
+  color: var(--color-text-faint);
+}
+
+.modal-attribution a {
+  color: var(--color-accent-dim);
+}
+
 /* ---------- フッター ---------- */
 .site-footer {
   text-align: center;

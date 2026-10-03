@@ -14,6 +14,7 @@
   const modalMeta = document.getElementById("modal-meta");
   const modalDesc = document.getElementById("modal-desc");
   const modalTags = document.getElementById("modal-tags");
+  const modalAttribution = document.getElementById("modal-attribution");
 
   let allEntries = [];
   let activeCategory = "all";
@@ -67,7 +68,7 @@
 
     card.innerHTML = `
       <div class="card-visual">
-        <img src="${entry.visual}" alt="${entry.title}" loading="lazy" />
+        <img src="${entry.visual}" alt="${entry.title}" loading="lazy" referrerpolicy="no-referrer" />
         <span class="card-category-tag">${label}</span>
         <span class="card-id">${entry.id}</span>
       </div>
@@ -94,7 +95,7 @@
 
   function openModal(entry) {
     const label = entry.categoryLabel || CATEGORY_LABEL[entry.category] || entry.category;
-    modalVisual.innerHTML = `<img src="${entry.visual}" alt="${entry.title}" />`;
+    modalVisual.innerHTML = `<img src="${entry.visual}" alt="${entry.title}" referrerpolicy="no-referrer" />`;
     modalId.textContent = `${entry.id} / ${label}`;
     modalTitle.textContent = entry.title;
     modalMeta.textContent = `記録日時: ${formatDate(entry.recordedAt)}`;
@@ -102,6 +103,21 @@
     modalTags.innerHTML = (entry.tags || [])
       .map((t) => `<span>#${t}</span>`)
       .join("");
+
+    const attr = entry.attribution;
+    if (attr) {
+      const sourceLink = attr.sourceUrl
+        ? `<a href="${attr.sourceUrl}" target="_blank" rel="noopener noreferrer">${attr.provider || "出典"}</a>`
+        : attr.provider || "出典不明";
+      const licenseLink = attr.licenseUrl
+        ? `<a href="${attr.licenseUrl}" target="_blank" rel="noopener noreferrer">${attr.license}</a>`
+        : attr.license;
+      modalAttribution.innerHTML = `写真: ${attr.creator || "不明"} / ${sourceLink} / ${licenseLink}`;
+      modalAttribution.hidden = false;
+    } else {
+      modalAttribution.hidden = true;
+    }
+
     modal.hidden = false;
     document.body.style.overflow = "hidden";
   }

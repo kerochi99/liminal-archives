@@ -2,8 +2,13 @@
 /**
  * LIMINAL ARCHIVES — 自動記録生成スクリプト
  *
- * data/spaces.json に新しい「視覚資料（レコード）」を1件以上生成・追記する。
- * 外部API・依存パッケージ無しで動作する（Node.js標準モジュールのみ使用）。
+ * Wikimedia Commons API（登録・APIキー不要、クラウドフレアのボット対策も無く
+ * CIからの自動実行に適している）から「ルミナルスペースらしい」実写真を取得し、
+ * 生成した説明文とあわせて data/spaces.json に新しい記録として追記する。
+ *
+ * （補足: Pexels/Pixabayは新規キー発行停止中、OpenverseはCloudflareの
+ *  ボット判定でCI環境からのアクセスがブロックされたため、両者を避けて
+ *  Wikimedia Commons を採用している）
  *
  * 使い方:
  *   node scripts/generate-space.js            # 1件生成
@@ -15,6 +20,30 @@ const path = require("path");
 
 const DATA_PATH = path.join(__dirname, "..", "data", "spaces.json");
 const MAX_ENTRIES = 400; // 肥大化防止のため古い記録から間引く
+const COMMONS_ENDPOINT = "https://commons.wikimedia.org/w/api.php";
+
+// 検索結果からセンシティブ・無関係な報道写真等を除外するブロックリスト
+const BLOCKLIST_KEYWORDS = [
+  "crime", "police", "fbi", "murder", "epstein", "disaster", "accident",
+  "war", "dead", "corpse", "assault", "raid", "doj", "shooting", "terror",
+  "attack", "bomb", "wildfire", "flood", "earthquake", "victim", "funeral",
+  "grave", "cemetery", "morgue", "autopsy", "massacre", "hostage", "riot",
+  "protest", "gun", "weapon", "explosion", "casualty", "combat",
+];
+
+// 人物が主題になりがちな検索結果を避けるための追加除外語
+const PEOPLE_EXCLUSION_KEYWORDS = [
+  "portrait", "person", "people", "soldier", "military", "wedding",
+  "ceremony", "parade", "man", "woman", "crowd", "group photo", "team photo",
+];
+
+// 画像として扱って良い拡張子（PDFやTIFFのスキャン文書等を除外）
+const ALLOWED_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp"];
+
+function hasAllowedExtension(url) {
+  const clean = url.split("?")[0].toLowerCase();
+  return ALLOWED_EXTENSIONS.some((ext) => clean.endsWith(ext));
+}
 
 const CATEGORIES = ["corridor", "indoor", "outdoor", "night"];
 
@@ -25,7 +54,44 @@ const CATEGORY_LABEL = {
   night: "夜間",
 };
 
-// ---- 語彙プール（カテゴリ別に雰囲気を変える） ----------------------------
+// ---- カテゴリ別の画像検索クエリ（英語の方がヒット率・質ともに良い） -------
+
+const IMAGE_QUERIES = {
+  corridor: [
+    "empty hallway",
+    "empty corridor building",
+    "empty school corridor",
+    "empty hotel hallway",
+    "empty hospital corridor",
+    "empty office corridor",
+  ],
+  indoor: [
+    "empty indoor swimming pool",
+    "abandoned mall interior",
+    "empty waiting room",
+    "empty ballroom",
+    "empty office interior",
+    "empty indoor hall",
+    "empty classroom",
+  ],
+  outdoor: [
+    "empty parking lot",
+    "empty parking garage",
+    "abandoned playground",
+    "empty plaza",
+    "empty courtyard",
+    "empty footbridge",
+  ],
+  night: [
+    "empty convenience store night",
+    "empty gas station night",
+    "empty street night",
+    "empty train station night",
+    "empty diner night",
+  ],
+};
+
+// ---- 語彙プール（説明文生成用） -------------------------------------------
 
 const PLACE_NOUNS = {
   corridor: ["廊下", "連絡通路", "非常階段の踊り場", "渡り廊下", "地下通路", "機械室前の通路", "避難経路", "控室へ続く通路"],
@@ -89,84 +155,105 @@ function pad(num, len) {
   return String(num).padStart(len, "0");
 }
 
-// ---- 手続き的SVG「視覚資料」生成 -----------------------------------------
-// 外部画像無しで、カテゴリごとに異なる抽象的な図像をその場で生成する。
+// ---- Wikimedia Commonsから「視覚資料」を取得 ------------------------------
 
-function seededRandom(seed) {
-  let s = seed % 2147483647;
-  if (s <= 0) s += 2147483646;
-  return function () {
-    s = (s * 16807) % 2147483647;
-    return (s - 1) / 2147483646;
-  };
+function stripHtml(html) {
+  if (!html) return null;
+  return html.replace(/<[^>]*>/g, "").trim() || null;
 }
 
-function buildSvg(category, seed) {
-  const rand = seededRandom(seed);
-  const w = 480, h = 320;
-  const palette = {
-    corridor: ["#2a2420", "#4a3f2f", "#d9c27a"],
-    indoor: ["#1c1f22", "#35393d", "#c9b26a"],
-    outdoor: ["#141a1e", "#2b3a33", "#8fae8a"],
-    night: ["#0d0f14", "#1b2230", "#e0a23a"],
-  }[category];
+function isSafeTitle(title) {
+  const lower = title.toLowerCase();
+  return !BLOCKLIST_KEYWORDS.some((kw) => lower.includes(kw));
+}
 
-  let shapes = "";
-
-  // 奥行きを示す遠近の矩形（廊下/通路の消失点表現）
-  const vanishX = w / 2 + (rand() - 0.5) * 60;
-  const vanishY = h / 2 + (rand() - 0.5) * 40;
-  const rings = 5 + Math.floor(rand() * 4);
-  for (let i = 0; i < rings; i++) {
-    const t = i / rings;
-    const rw = w * (1 - t * 0.85);
-    const rh = h * (1 - t * 0.85);
-    const x = vanishX - rw / 2;
-    const y = vanishY - rh / 2;
-    const opacity = (0.08 + t * 0.5).toFixed(2);
-    shapes += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${rw.toFixed(1)}" height="${rh.toFixed(1)}" fill="none" stroke="${palette[2]}" stroke-opacity="${opacity}" stroke-width="1"/>`;
+async function fetchImageForCategory(category, usedUrls) {
+  const queries = [...IMAGE_QUERIES[category]];
+  // クエリをシャッフルして順に試す（1つ目で十分な新規候補が無ければ次へ）
+  for (let i = queries.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queries[i], queries[j]] = [queries[j], queries[i]];
   }
 
-  // 光源（蛍光灯/ランプ）の帯
-  const lights = 2 + Math.floor(rand() * 3);
-  for (let i = 0; i < lights; i++) {
-    const lx = rand() * w;
-    const ly = rand() * h * 0.6;
-    const lw = 40 + rand() * 90;
-    shapes += `<rect x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" width="${lw.toFixed(1)}" height="4" fill="${palette[2]}" opacity="${(0.3 + rand() * 0.5).toFixed(2)}"/>`;
+  const exclusionTerms = [...BLOCKLIST_KEYWORDS.slice(0, 5), ...PEOPLE_EXCLUSION_KEYWORDS]
+    .map((kw) => `-${kw}`)
+    .join(" ");
+
+  for (const query of queries) {
+    const url = new URL(COMMONS_ENDPOINT);
+    url.searchParams.set("action", "query");
+    url.searchParams.set("generator", "search");
+    url.searchParams.set("gsrsearch", `${query} ${exclusionTerms}`);
+    url.searchParams.set("gsrnamespace", "6");
+    url.searchParams.set("gsrlimit", "20");
+    url.searchParams.set("prop", "imageinfo");
+    url.searchParams.set("iiprop", "url|extmetadata|size");
+    url.searchParams.set("iiurlwidth", "900");
+    url.searchParams.set("format", "json");
+    url.searchParams.set("origin", "*");
+
+    let json;
+    try {
+      const res = await fetch(url, {
+        headers: { "User-Agent": "liminal-archives-bot/1.0 (personal static site; contact via GitHub repo)" },
+      });
+      if (!res.ok) continue;
+      json = await res.json();
+    } catch (err) {
+      continue; // ネットワークエラー時は次のクエリへ
+    }
+
+    const pages = Object.values((json.query || {}).pages || {});
+    const candidates = pages
+      .map((p) => ({ page: p, info: (p.imageinfo || [])[0] }))
+      .filter(({ page, info }) => {
+        if (!info || !info.url) return false;
+        if (!hasAllowedExtension(info.url)) return false; // PDF/TIFF等のスキャン文書を除外
+        if (usedUrls.has(info.url)) return false;
+        if (!isSafeTitle(page.title || "")) return false;
+        if ((info.width || 0) < 500) return false; // 小さすぎる画像を除外
+        return true;
+      })
+      .sort((a, b) => (a.page.index || 0) - (b.page.index || 0)); // 検索関連度順
+
+    if (candidates.length === 0) continue;
+
+    // 関連度の高い上位候補からランダムに選ぶ（無関係な結果の混入を抑える）
+    const topCandidates = candidates.slice(0, 8);
+    const { info } = pick(topCandidates);
+    const meta = info.extmetadata || {};
+    const creator = stripHtml(meta.Artist && meta.Artist.value) || "不明";
+    const license = (meta.LicenseShortName && meta.LicenseShortName.value) || "License unknown";
+    const licenseUrl = (meta.LicenseUrl && meta.LicenseUrl.value) || null;
+
+    return {
+      url: info.url,
+      creator,
+      license,
+      licenseUrl,
+      sourceUrl: info.descriptionurl || null,
+      provider: "Wikimedia Commons",
+    };
   }
 
-  // ノイズ粒子（グレイン感）
-  let noise = "";
-  for (let i = 0; i < 60; i++) {
-    const nx = rand() * w;
-    const ny = rand() * h;
-    noise += `<circle cx="${nx.toFixed(1)}" cy="${ny.toFixed(1)}" r="0.6" fill="#ffffff" opacity="${(rand() * 0.07).toFixed(3)}"/>`;
-  }
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">
-    <defs>
-      <radialGradient id="vgt" cx="50%" cy="45%" r="75%">
-        <stop offset="0%" stop-color="${palette[1]}"/>
-        <stop offset="100%" stop-color="${palette[0]}"/>
-      </radialGradient>
-    </defs>
-    <rect width="${w}" height="${h}" fill="url(#vgt)"/>
-    ${shapes}
-    ${noise}
-    <rect width="${w}" height="${h}" fill="#000000" opacity="0.08"/>
-  </svg>`;
+  return null; // 全クエリで新規候補が見つからなかった
 }
 
 // ---- レコード生成本体 -----------------------------------------------------
 
-function generateEntry(existingIds, seqNumber) {
+async function generateEntry(existingIds, seqNumber, usedUrls) {
   const category = pick(CATEGORIES);
   const place = pick(PLACE_NOUNS[category]);
   const lighting = pick(LIGHTING);
   const atmosphere = pick(ATMOSPHERE);
   const detail = pick(DETAILS);
   const tags = pickMany(TAGS_POOL, 2 + Math.floor(Math.random() * 3));
+
+  const image = await fetchImageForCategory(category, usedUrls);
+  if (!image) {
+    return { entry: null, nextSeq: seqNumber };
+  }
+  usedUrls.add(image.url);
 
   let id;
   do {
@@ -175,8 +262,6 @@ function generateEntry(existingIds, seqNumber) {
   } while (existingIds.has(id));
 
   const now = new Date();
-  const svg = buildSvg(category, Date.now() % 100000 + Math.floor(Math.random() * 100000));
-  const dataUri = "data:image/svg+xml;utf8," + encodeURIComponent(svg);
 
   return {
     entry: {
@@ -187,7 +272,14 @@ function generateEntry(existingIds, seqNumber) {
       recordedAt: now.toISOString(),
       description: `${place}。${lighting}。${atmosphere}。${detail}。`,
       tags,
-      visual: dataUri,
+      visual: image.url,
+      attribution: {
+        creator: image.creator,
+        license: image.license,
+        licenseUrl: image.licenseUrl,
+        sourceUrl: image.sourceUrl,
+        provider: image.provider,
+      },
     },
     nextSeq: seqNumber,
   };
@@ -214,7 +306,7 @@ function saveData(entries, nextSeq) {
   fs.writeFileSync(DATA_PATH, JSON.stringify(payload, null, 2) + "\n", "utf8");
 }
 
-function main() {
+async function main() {
   const args = process.argv.slice(2);
   let count = 1;
   const countIdx = args.indexOf("--count");
@@ -224,12 +316,17 @@ function main() {
 
   const { entries, nextSeq } = loadData();
   const existingIds = new Set(entries.map((e) => e.id));
+  const usedUrls = new Set(entries.map((e) => e.visual).filter(Boolean));
   let seq = nextSeq;
 
   const created = [];
   for (let i = 0; i < count; i++) {
-    const { entry, nextSeq: ns } = generateEntry(existingIds, seq);
+    const { entry, nextSeq: ns } = await generateEntry(existingIds, seq, usedUrls);
     seq = ns;
+    if (!entry) {
+      console.warn("[generate-space] 画像候補が見つからず、1件スキップしました");
+      continue;
+    }
     existingIds.add(entry.id);
     entries.unshift(entry); // 新しい記録を先頭に
     created.push(entry.id);
@@ -244,4 +341,7 @@ function main() {
   console.log(`[generate-space] 合計レコード数: ${trimmed.length}`);
 }
 
-main();
+main().catch((err) => {
+  console.error("[generate-space] 致命的エラー:", err);
+  process.exit(1);
+});
