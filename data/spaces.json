@@ -1,7 +1,28 @@
 {
-  "nextSeq": 13,
-  "updatedAt": "2026-10-03T17:31:09.486184+00:00",
+  "nextSeq": 14,
+  "updatedAt": "2026-10-04T18:28:20.692Z",
   "entries": [
+    {
+      "id": "LA-0013",
+      "title": "展示ホールの記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-04T18:28:20.692Z",
+      "description": "展示ホール。点滅する蛍光灯の光が壁を舐めている。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "時間断絶",
+        "退色",
+        "レムナント"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Empty_ballroom_on_the_2nd_floor_of_the_University_National_Bank_located_on_University_Way_NE%2C_ca_1913_%28SEATTLE_3725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_ballroom_on_the_2nd_floor_of_the_University_National_Bank_located_on_University_Way_NE,_ca_1913_(SEATTLE_3725).jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0012",
       "title": "団地の広場の記録",
