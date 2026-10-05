@@ -1,7 +1,27 @@
 {
-  "nextSeq": 14,
-  "updatedAt": "2026-10-04T18:28:20.692Z",
+  "nextSeq": 15,
+  "updatedAt": "2026-10-05T21:43:57.798Z",
   "entries": [
+    {
+      "id": "LA-0014",
+      "title": "公園の東屋の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-10-05T21:43:57.798Z",
+      "description": "公園の東屋。蛍光灯のうち数本が切れ、明暗のまだらを作っている。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "レムナント",
+        "無人"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Domestic_footbridges_over_an_empty_stream_in_Dane_End_-_geograph.org.uk_-_7304175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Philip Jeffrey",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Domestic_footbridges_over_an_empty_stream_in_Dane_End_-_geograph.org.uk_-_7304175.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0013",
       "title": "展示ホールの記録",
