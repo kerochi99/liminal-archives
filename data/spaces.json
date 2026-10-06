@@ -1,7 +1,29 @@
 {
-  "nextSeq": 15,
-  "updatedAt": "2026-10-05T21:43:57.798Z",
+  "nextSeq": 16,
+  "updatedAt": "2026-10-06T19:54:41.095Z",
   "entries": [
+    {
+      "id": "LA-0015",
+      "title": "無人の駅前広場の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-06T19:54:41.095Z",
+      "description": "無人の駅前広場。非常口の緑色の light だけが静かに灯っている。どの方向を見ても、出口は見当たらない。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "退色",
+        "蛍光灯",
+        "レムナント",
+        "ノスタルジア"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Empty_tables%2C_Belfast_-_geograph.org.uk_-_1061789.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Albert Bridge",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_tables,_Belfast_-_geograph.org.uk_-_1061789.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0014",
       "title": "公園の東屋の記録",
