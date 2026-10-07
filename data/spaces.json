@@ -1,7 +1,29 @@
 {
-  "nextSeq": 16,
-  "updatedAt": "2026-10-06T19:54:41.095Z",
+  "nextSeq": 17,
+  "updatedAt": "2026-10-07T20:19:37.818Z",
   "entries": [
+    {
+      "id": "LA-0016",
+      "title": "展示ホールの記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-07T20:19:37.817Z",
+      "description": "展示ホール。非常口の緑色の light だけが静かに灯っている。どの方向を見ても、出口は見当たらない。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "静寂",
+        "夢の記憶",
+        "無人",
+        "深夜"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Vancouver_-_Robert_Lee_YMCA_pool_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Joe Mabel",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vancouver_-_Robert_Lee_YMCA_pool_01.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0015",
       "title": "無人の駅前広場の記録",
