@@ -1,7 +1,28 @@
 {
-  "nextSeq": 17,
-  "updatedAt": "2026-10-07T20:19:37.818Z",
+  "nextSeq": 18,
+  "updatedAt": "2026-10-08T20:21:47.515Z",
   "entries": [
+    {
+      "id": "LA-0017",
+      "title": "休憩室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-08T20:21:47.515Z",
+      "description": "休憩室。ナトリウムランプの橙色の光だけが頼りだ。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。観葉植物の造花が、埃をかぶったまま佇んでいる。",
+      "tags": [
+        "昭和レトロ",
+        "蛍光灯",
+        "深夜"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/6/67/The_Promenade_at_Fittie._-_geograph.org.uk_-_117089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Colin Smith",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Promenade_at_Fittie._-_geograph.org.uk_-_117089.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0016",
       "title": "展示ホールの記録",
