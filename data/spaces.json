@@ -1,7 +1,28 @@
 {
-  "nextSeq": 18,
-  "updatedAt": "2026-10-08T20:21:47.515Z",
+  "nextSeq": 19,
+  "updatedAt": "2026-10-09T19:54:39.256Z",
   "entries": [
+    {
+      "id": "LA-0018",
+      "title": "教室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-09T19:54:39.256Z",
+      "description": "教室。非常口の緑色の light だけが静かに灯っている。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "空調音",
+        "静寂",
+        "昭和レトロ"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/3/35/San_Bernardino_Santa_Fe_depot_in_San_Bernardino%2C_California._Detail_of_an_original_bench_in_the_waiting_room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Charles Hepperle (Chepp39)",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Bernardino_Santa_Fe_depot_in_San_Bernardino,_California._Detail_of_an_original_bench_in_the_waiting_room.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0017",
       "title": "休憩室の記録",
