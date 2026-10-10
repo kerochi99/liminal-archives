@@ -1,7 +1,28 @@
 {
-  "nextSeq": 19,
-  "updatedAt": "2026-10-09T19:54:39.256Z",
+  "nextSeq": 20,
+  "updatedAt": "2026-10-10T19:03:36.349Z",
   "entries": [
+    {
+      "id": "LA-0019",
+      "title": "待合室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-10T19:03:36.348Z",
+      "description": "待合室。ナトリウムランプの橙色の光だけが頼りだ。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "ノスタルジア",
+        "静寂",
+        "夢の記憶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/b/ba/The_relaxation_room_of_the_vaccination_centre_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Claudio Centonze, European Commission",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_relaxation_room_of_the_vaccination_centre_5.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0018",
       "title": "教室の記録",
