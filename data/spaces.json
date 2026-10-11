@@ -1,7 +1,29 @@
 {
-  "nextSeq": 20,
-  "updatedAt": "2026-10-10T19:03:36.349Z",
+  "nextSeq": 21,
+  "updatedAt": "2026-10-11T19:16:16.928Z",
   "entries": [
+    {
+      "id": "LA-0020",
+      "title": "廊下の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-11T19:16:16.928Z",
+      "description": "廊下。どこから来るのか分からない黄味がかった照明が満ちている。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "昭和レトロ",
+        "既視感",
+        "時間断絶",
+        "業務用空間"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/2/29/Wappenscheibe_Abt_St._Gallen_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Unknown artistUnknown artist",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wappenscheibe_Abt_St._Gallen_01.png",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0019",
       "title": "待合室の記録",
