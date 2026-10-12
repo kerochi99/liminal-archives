@@ -1,7 +1,29 @@
 {
-  "nextSeq": 21,
-  "updatedAt": "2026-10-11T19:16:16.928Z",
+  "nextSeq": 22,
+  "updatedAt": "2026-10-12T22:19:19.781Z",
   "entries": [
+    {
+      "id": "LA-0021",
+      "title": "避難経路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-12T22:19:19.781Z",
+      "description": "避難経路。点滅する蛍光灯の光が壁を舐めている。空調の送風音だけが、空間の広さを物語っている。天井のタイルに雨染みのような跡が規則的に並んでいる。",
+      "tags": [
+        "静寂",
+        "無人",
+        "時間断絶",
+        "反復構造"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/2/24/Western_colonade_of_the_Temple_of_Ongau_Wat%2C_Cambodia_ILN0-1868-0201-0005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "ILN staff after Mr. J. Thomson of Bangkok",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Western_colonade_of_the_Temple_of_Ongau_Wat,_Cambodia_ILN0-1868-0201-0005.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0020",
       "title": "廊下の記録",
