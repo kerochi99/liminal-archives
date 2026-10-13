@@ -1,7 +1,27 @@
 {
-  "nextSeq": 22,
-  "updatedAt": "2026-10-12T22:19:19.781Z",
+  "nextSeq": 23,
+  "updatedAt": "2026-10-13T20:26:10.880Z",
   "entries": [
+    {
+      "id": "LA-0022",
+      "title": "避難経路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-13T20:26:10.879Z",
+      "description": "避難経路。点滅する蛍光灯の光が壁を舐めている。どこかでBGMが途切れがちに流れているが、曲名は分からない。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "昭和レトロ",
+        "レムナント"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/5/58/Lehigh_and_Susquehanna_R.R._cut%2C_Solomon%27s_Gap%2C_by_M._A._Kleckner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Kleckner, M. A. -- Photographer",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lehigh_and_Susquehanna_R.R._cut,_Solomon%27s_Gap,_by_M._A._Kleckner.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0021",
       "title": "避難経路の記録",
