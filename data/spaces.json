@@ -1,7 +1,27 @@
 {
-  "nextSeq": 23,
-  "updatedAt": "2026-10-13T20:26:10.880Z",
+  "nextSeq": 24,
+  "updatedAt": "2026-10-14T19:04:29.944Z",
   "entries": [
+    {
+      "id": "LA-0023",
+      "title": "非常階段の踊り場の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-14T19:04:29.943Z",
+      "description": "非常階段の踊り場。ナトリウムランプの橙色の光だけが頼りだ。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "空調音",
+        "既視感"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Orange-_The_Wall_of_the_Th%C3%A9%C3%A2tre_antique_%28SM_stf49%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Édouard Baldus",
+        "license": "PDM-owner",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange-_The_Wall_of_the_Th%C3%A9%C3%A2tre_antique_(SM_stf49).png",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0022",
       "title": "避難経路の記録",
