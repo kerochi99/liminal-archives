@@ -1,7 +1,27 @@
 {
-  "nextSeq": 27,
-  "updatedAt": "2026-10-17T17:38:17.038Z",
+  "nextSeq": 28,
+  "updatedAt": "2026-10-18T17:40:46.312Z",
   "entries": [
+    {
+      "id": "LA-0027",
+      "title": "コンビニの店内の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-18T17:40:46.311Z",
+      "description": "コンビニの店内。ナトリウムランプの橙色の光だけが頼りだ。どこかでBGMが途切れがちに流れているが、曲名は分からない。時計の針は動いているように見えるが、何度確認しても同じ時刻を指す。",
+      "tags": [
+        "夢の記憶",
+        "時間断絶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/9/9e/PIREUS_-_EMPTY_METRO_STATION_BY_NIGHT_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "ANDREJ NEUHERZ",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIREUS_-_EMPTY_METRO_STATION_BY_NIGHT_-_panoramio.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0026",
       "title": "廊下の記録",
