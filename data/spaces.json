@@ -1,7 +1,28 @@
 {
-  "nextSeq": 28,
-  "updatedAt": "2026-10-18T17:40:46.312Z",
+  "nextSeq": 29,
+  "updatedAt": "2026-10-19T20:18:12.406Z",
   "entries": [
+    {
+      "id": "LA-0028",
+      "title": "避難経路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-19T20:18:12.405Z",
+      "description": "避難経路。照明は規則的に明滅し、低い電子音を発している。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "反復構造",
+        "時間断絶",
+        "静寂"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Western_facade_of_the_Temple_of_Ongau_Wat_ILN0-1868-0201-0004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "ILN staff after Mr. J. Thomson of Bangkok",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Western_facade_of_the_Temple_of_Ongau_Wat_ILN0-1868-0201-0004.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0027",
       "title": "コンビニの店内の記録",
