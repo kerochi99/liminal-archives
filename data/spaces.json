@@ -1,7 +1,27 @@
 {
-  "nextSeq": 29,
-  "updatedAt": "2026-10-19T20:18:12.406Z",
+  "nextSeq": 30,
+  "updatedAt": "2026-10-20T18:50:18.642Z",
   "entries": [
+    {
+      "id": "LA-0029",
+      "title": "オフィスフロアの記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-20T18:50:18.642Z",
+      "description": "オフィスフロア。点滅する蛍光灯の光が壁を舐めている。どこかでBGMが途切れがちに流れているが、曲名は分からない。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "蛍光灯",
+        "ノスタルジア"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/4/4c/19th_century_classroom%2C_Auckland_-_0767.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Jorge Royan",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:19th_century_classroom,_Auckland_-_0767.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0028",
       "title": "避難経路の記録",
