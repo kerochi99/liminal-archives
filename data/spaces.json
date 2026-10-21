@@ -1,7 +1,29 @@
 {
-  "nextSeq": 30,
-  "updatedAt": "2026-10-20T18:50:18.642Z",
+  "nextSeq": 31,
+  "updatedAt": "2026-10-21T19:02:12.699Z",
   "entries": [
+    {
+      "id": "LA-0030",
+      "title": "終電後のプラットフォームの記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-21T19:02:12.699Z",
+      "description": "終電後のプラットフォーム。ナトリウムランプの橙色の光だけが頼りだ。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "時間断絶",
+        "昭和レトロ",
+        "夢の記憶",
+        "蛍光灯"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Photo_4-van.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "sodiumsugar",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photo_4-van.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0029",
       "title": "オフィスフロアの記録",
