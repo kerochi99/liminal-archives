@@ -1,7 +1,28 @@
 {
-  "nextSeq": 31,
-  "updatedAt": "2026-10-21T19:02:12.699Z",
+  "nextSeq": 32,
+  "updatedAt": "2026-10-22T18:58:13.568Z",
   "entries": [
+    {
+      "id": "LA-0031",
+      "title": "駐車場の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-10-22T18:58:13.567Z",
+      "description": "駐車場。どこから来るのか分からない黄味がかった照明が満ちている。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "レムナント",
+        "既視感",
+        "ノスタルジア"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Oklahoma_City_National_Memorial%2C_Harvey_Avenue_and_NW_4th_Street%2C_Oklahoma_City%2C_OK_-_54013705429.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "w_lemay",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oklahoma_City_National_Memorial,_Harvey_Avenue_and_NW_4th_Street,_Oklahoma_City,_OK_-_54013705429.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0030",
       "title": "終電後のプラットフォームの記録",
