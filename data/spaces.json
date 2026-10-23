@@ -1,7 +1,28 @@
 {
-  "nextSeq": 32,
-  "updatedAt": "2026-10-22T18:58:13.568Z",
+  "nextSeq": 33,
+  "updatedAt": "2026-10-23T18:48:06.385Z",
   "entries": [
+    {
+      "id": "LA-0032",
+      "title": "連絡通路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-23T18:48:06.385Z",
+      "description": "連絡通路。照明は生きているが、誰も使っていない。どの方向を見ても、出口は見当たらない。観葉植物の造花が、埃をかぶったまま佇んでいる。",
+      "tags": [
+        "深夜",
+        "蛍光灯",
+        "昭和レトロ"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Empty_hallway_with_exit_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Yitzilitt",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_hallway_with_exit_sign.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0031",
       "title": "駐車場の記録",
