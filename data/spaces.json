@@ -1,7 +1,27 @@
 {
-  "nextSeq": 33,
-  "updatedAt": "2026-10-23T18:48:06.385Z",
+  "nextSeq": 34,
+  "updatedAt": "2026-10-24T17:42:59.949Z",
   "entries": [
+    {
+      "id": "LA-0033",
+      "title": "24時間営業の洗濯店の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-24T17:42:59.949Z",
+      "description": "24時間営業の洗濯店。照明は規則的に明滅し、低い電子音を発している。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "夢の記憶",
+        "既視感"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/9/93/International_trains_in_Wien_Westbahnhof%2C_2006_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Bahnfrend",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:International_trains_in_Wien_Westbahnhof,_2006_(01).jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0032",
       "title": "連絡通路の記録",
