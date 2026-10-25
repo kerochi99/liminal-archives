@@ -1,7 +1,27 @@
 {
-  "nextSeq": 34,
-  "updatedAt": "2026-10-24T17:42:59.949Z",
+  "nextSeq": 35,
+  "updatedAt": "2026-10-25T17:59:00.712Z",
   "entries": [
+    {
+      "id": "LA-0034",
+      "title": "連絡通路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-25T17:59:00.711Z",
+      "description": "連絡通路。ナトリウムランプの橙色の光だけが頼りだ。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。観葉植物の造花が、埃をかぶったまま佇んでいる。",
+      "tags": [
+        "既視感",
+        "退色"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Empty_hallway%2C_Katzen_Art_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Ser Amantio di Nicolao",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_hallway,_Katzen_Art_Museum.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0033",
       "title": "24時間営業の洗濯店の記録",
