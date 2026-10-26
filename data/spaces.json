@@ -1,7 +1,29 @@
 {
-  "nextSeq": 35,
-  "updatedAt": "2026-10-25T17:59:00.712Z",
+  "nextSeq": 36,
+  "updatedAt": "2026-10-26T20:13:57.937Z",
   "entries": [
+    {
+      "id": "LA-0035",
+      "title": "無人の駅前広場の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-26T20:13:57.937Z",
+      "description": "無人の駅前広場。照明は規則的に明滅し、低い電子音を発している。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "レムナント",
+        "夢の記憶",
+        "静寂",
+        "既視感"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/9/93/Boussens_-_Gare_de_Boussens_-_20231114_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Olybrius",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boussens_-_Gare_de_Boussens_-_20231114_(1).jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0034",
       "title": "連絡通路の記録",
