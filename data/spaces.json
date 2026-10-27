@@ -1,7 +1,28 @@
 {
-  "nextSeq": 36,
-  "updatedAt": "2026-10-26T20:13:57.937Z",
+  "nextSeq": 37,
+  "updatedAt": "2026-10-27T19:45:10.056Z",
   "entries": [
+    {
+      "id": "LA-0036",
+      "title": "空き地の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-10-27T19:45:10.056Z",
+      "description": "空き地。ナトリウムランプの橙色の光だけが頼りだ。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。壁には擦り切れた案内図が貼られているが、現在地を示す印はない。",
+      "tags": [
+        "時間断絶",
+        "昭和レトロ",
+        "夢の記憶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Upper_Sproul_Plaza_empty_on_a_Sunday_morning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Gabriel Classon (gabeclasson on Flickr)",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Sproul_Plaza_empty_on_a_Sunday_morning.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0035",
       "title": "無人の駅前広場の記録",
