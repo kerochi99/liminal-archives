@@ -1,7 +1,29 @@
 {
-  "nextSeq": 37,
-  "updatedAt": "2026-10-27T19:45:10.056Z",
+  "nextSeq": 38,
+  "updatedAt": "2026-10-28T19:59:19.577Z",
   "entries": [
+    {
+      "id": "LA-0037",
+      "title": "機械室前の通路の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-28T19:59:19.577Z",
+      "description": "機械室前の通路。非常口の緑色の light だけが静かに灯っている。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "時間断絶",
+        "業務用空間",
+        "静寂",
+        "ノスタルジア"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Canal_Street_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "aismallard",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canal_Street_station.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0036",
       "title": "空き地の記録",
