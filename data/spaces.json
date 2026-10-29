@@ -1,7 +1,29 @@
 {
-  "nextSeq": 38,
-  "updatedAt": "2026-10-28T19:59:19.577Z",
+  "nextSeq": 39,
+  "updatedAt": "2026-10-29T19:57:41.807Z",
   "entries": [
+    {
+      "id": "LA-0038",
+      "title": "宴会場の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-10-29T19:57:41.807Z",
+      "description": "宴会場。点滅する蛍光灯の光が壁を舐めている。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "空調音",
+        "蛍光灯",
+        "無人",
+        "時間断絶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Abandoned_mall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "3steph14",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abandoned_mall.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0037",
       "title": "機械室前の通路の記録",
