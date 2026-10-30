@@ -1,7 +1,29 @@
 {
-  "nextSeq": 39,
-  "updatedAt": "2026-10-29T19:57:41.807Z",
+  "nextSeq": 40,
+  "updatedAt": "2026-10-30T19:47:21.261Z",
   "entries": [
+    {
+      "id": "LA-0039",
+      "title": "24時間営業の洗濯店の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-10-30T19:47:21.260Z",
+      "description": "24時間営業の洗濯店。非常口の緑色の light だけが静かに灯っている。どこかでBGMが途切れがちに流れているが、曲名は分からない。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "空調音",
+        "昭和レトロ",
+        "蛍光灯",
+        "退色"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/e/e8/HK_YTM_MK_%E6%97%BA%E8%A7%92_Mong_Kok_%E9%80%9A%E8%8F%9C%E8%A1%97_Tung_Choi_Street_night_December_2022_Px3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "YEIWQNC Chhea Kuma230",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_YTM_MK_%E6%97%BA%E8%A7%92_Mong_Kok_%E9%80%9A%E8%8F%9C%E8%A1%97_Tung_Choi_Street_night_December_2022_Px3_01.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0038",
       "title": "宴会場の記録",
