@@ -1,7 +1,27 @@
 {
-  "nextSeq": 40,
-  "updatedAt": "2026-10-30T19:47:21.261Z",
+  "nextSeq": 41,
+  "updatedAt": "2026-10-31T18:56:15.369Z",
   "entries": [
+    {
+      "id": "LA-0040",
+      "title": "廊下の記録",
+      "category": "corridor",
+      "categoryLabel": "廊下",
+      "recordedAt": "2026-10-31T18:56:15.369Z",
+      "description": "廊下。ナトリウムランプの橙色の光だけが頼りだ。時間の感覚が失われるほど静かで、ただ照明の低い音だけが響く。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "反復構造",
+        "時間断絶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Heikintori_mostly_empty.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "JIP",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heikintori_mostly_empty.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0039",
       "title": "24時間営業の洗濯店の記録",
