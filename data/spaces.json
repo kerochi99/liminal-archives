@@ -1,7 +1,27 @@
 {
-  "nextSeq": 41,
-  "updatedAt": "2026-10-31T18:56:15.369Z",
+  "nextSeq": 42,
+  "updatedAt": "2026-11-01T19:17:22.551Z",
   "entries": [
+    {
+      "id": "LA-0041",
+      "title": "展示ホールの記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-01T19:17:22.550Z",
+      "description": "展示ホール。どこから来るのか分からない黄味がかった照明が満ちている。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "業務用空間",
+        "既視感"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/e/ed/The_relaxation_room_of_the_vaccination_centre_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Claudio Centonze, European Commission",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_relaxation_room_of_the_vaccination_centre_2.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0040",
       "title": "廊下の記録",
