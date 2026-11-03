@@ -1,7 +1,29 @@
 {
-  "nextSeq": 43,
-  "updatedAt": "2026-11-02T22:56:41.866Z",
+  "nextSeq": 44,
+  "updatedAt": "2026-11-03T20:42:42.094Z",
   "entries": [
+    {
+      "id": "LA-0043",
+      "title": "宴会場の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-03T20:42:42.094Z",
+      "description": "宴会場。ナトリウムランプの橙色の光だけが頼りだ。どこかでBGMが途切れがちに流れているが、曲名は分からない。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "昭和レトロ",
+        "反復構造",
+        "既視感",
+        "蛍光灯"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/c/ce/A_classroom_gallery_of_CU_Alipore_campus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Billjones94",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_classroom_gallery_of_CU_Alipore_campus.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0042",
       "title": "夜間診療の待合室の記録",
