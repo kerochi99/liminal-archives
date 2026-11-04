@@ -1,7 +1,29 @@
 {
-  "nextSeq": 44,
-  "updatedAt": "2026-11-03T20:42:42.094Z",
+  "nextSeq": 45,
+  "updatedAt": "2026-11-04T20:59:25.331Z",
   "entries": [
+    {
+      "id": "LA-0044",
+      "title": "夜間診療の待合室の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-04T20:59:25.331Z",
+      "description": "夜間診療の待合室。非常口の緑色の light だけが静かに灯っている。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。時計の針は動いているように見えるが、何度確認しても同じ時刻を指す。",
+      "tags": [
+        "深夜",
+        "静寂",
+        "ノスタルジア",
+        "業務用空間"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/6/67/Empty_market_stalls_-_geograph.org.uk_-_4771396.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "DS Pugh",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_market_stalls_-_geograph.org.uk_-_4771396.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0043",
       "title": "宴会場の記録",
