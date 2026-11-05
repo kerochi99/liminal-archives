@@ -1,7 +1,27 @@
 {
-  "nextSeq": 45,
-  "updatedAt": "2026-11-04T20:59:25.331Z",
+  "nextSeq": 46,
+  "updatedAt": "2026-11-05T21:16:37.883Z",
   "entries": [
+    {
+      "id": "LA-0045",
+      "title": "遊歩道の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-11-05T21:16:37.883Z",
+      "description": "遊歩道。点滅する蛍光灯の光が壁を舐めている。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "蛍光灯",
+        "昭和レトロ"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/a/a6/An_empty_Cam_-_geograph.org.uk_-_648240.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Sebastian Ballard",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_empty_Cam_-_geograph.org.uk_-_648240.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0044",
       "title": "夜間診療の待合室の記録",
