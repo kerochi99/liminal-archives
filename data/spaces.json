@@ -1,7 +1,27 @@
 {
-  "nextSeq": 46,
-  "updatedAt": "2026-11-05T21:16:37.883Z",
+  "nextSeq": 47,
+  "updatedAt": "2026-11-06T20:39:34.971Z",
   "entries": [
+    {
+      "id": "LA-0046",
+      "title": "コンビニの店内の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-06T20:39:34.971Z",
+      "description": "コンビニの店内。どこから来るのか分からない黄味がかった照明が満ちている。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。観葉植物の造花が、埃をかぶったまま佇んでいる。",
+      "tags": [
+        "時間断絶",
+        "反復構造"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Birkenwerder_Bahnhof_lub_2023-07-16_Nacht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Lukas Beck",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Birkenwerder_Bahnhof_lub_2023-07-16_Nacht.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0045",
       "title": "遊歩道の記録",
