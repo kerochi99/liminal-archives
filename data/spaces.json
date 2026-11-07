@@ -1,7 +1,29 @@
 {
-  "nextSeq": 47,
-  "updatedAt": "2026-11-06T20:39:34.971Z",
+  "nextSeq": 48,
+  "updatedAt": "2026-11-07T19:12:28.151Z",
   "entries": [
+    {
+      "id": "LA-0047",
+      "title": "コンビニの店内の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-07T19:12:28.150Z",
+      "description": "コンビニの店内。照明は規則的に明滅し、低い電子音を発している。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "夢の記憶",
+        "ノスタルジア",
+        "静寂",
+        "既視感"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bathurst_Yard_empty_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Secondarywaltz",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bathurst_Yard_empty_at_night.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0046",
       "title": "コンビニの店内の記録",
