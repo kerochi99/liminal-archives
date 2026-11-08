@@ -1,7 +1,27 @@
 {
-  "nextSeq": 48,
-  "updatedAt": "2026-11-07T19:12:28.151Z",
+  "nextSeq": 49,
+  "updatedAt": "2026-11-08T19:14:25.628Z",
   "entries": [
+    {
+      "id": "LA-0048",
+      "title": "宴会場の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-08T19:14:25.628Z",
+      "description": "宴会場。照明は生きているが、誰も使っていない。どこかでBGMが途切れがちに流れているが、曲名は分からない。壁には擦り切れた案内図が貼られているが、現在地を示す印はない。",
+      "tags": [
+        "レムナント",
+        "蛍光灯"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/d/d5/A_classroom_at_the_Dept_of_History_in_University_of_Calcutta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Billjones94",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_classroom_at_the_Dept_of_History_in_University_of_Calcutta.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0047",
       "title": "コンビニの店内の記録",
