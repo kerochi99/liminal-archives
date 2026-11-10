@@ -1,7 +1,28 @@
 {
-  "nextSeq": 50,
-  "updatedAt": "2026-11-09T23:38:47.176Z",
+  "nextSeq": 51,
+  "updatedAt": "2026-11-10T21:06:18.989Z",
   "entries": [
+    {
+      "id": "LA-0050",
+      "title": "コンビニの店内の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-10T21:06:18.989Z",
+      "description": "コンビニの店内。蛍光灯のうち数本が切れ、明暗のまだらを作っている。空調の送風音だけが、空間の広さを物語っている。隅に放置された椅子が一つ、誰かを待つように並んでいる。",
+      "tags": [
+        "既視感",
+        "反復構造",
+        "無人"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/4/4d/2070_077-9_%2B_train_in_Wien_Westbahnhof%2C_2006_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Bahnfrend",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2070_077-9_%2B_train_in_Wien_Westbahnhof,_2006_(01).jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0049",
       "title": "夜間診療の待合室の記録",
