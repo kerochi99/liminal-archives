@@ -1,7 +1,29 @@
 {
-  "nextSeq": 51,
-  "updatedAt": "2026-11-10T21:06:18.989Z",
+  "nextSeq": 52,
+  "updatedAt": "2026-11-11T21:39:22.671Z",
   "entries": [
+    {
+      "id": "LA-0051",
+      "title": "無人の駅前広場の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-11T21:39:22.671Z",
+      "description": "無人の駅前広場。照明は生きているが、誰も使っていない。床のタイルは妙に反射し、歩くたびに軽い耳鳴りのような音を立てる。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "昭和レトロ",
+        "蛍光灯",
+        "既視感",
+        "無人"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bahnhof_Berlin-Westkreuz_Nacht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Geoprofi Lars",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahnhof_Berlin-Westkreuz_Nacht.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0050",
       "title": "コンビニの店内の記録",
