@@ -1,7 +1,28 @@
 {
-  "nextSeq": 52,
-  "updatedAt": "2026-11-11T21:39:22.671Z",
+  "nextSeq": 53,
+  "updatedAt": "2026-11-12T21:39:31.565Z",
   "entries": [
+    {
+      "id": "LA-0052",
+      "title": "公園の東屋の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-11-12T21:39:31.565Z",
+      "description": "公園の東屋。点滅する蛍光灯の光が壁を舐めている。どの方向を見ても、出口は見当たらない。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "既視感",
+        "レムナント",
+        "無人"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/5/55/Milliken_Park_parking_lot_panoramic%2C_April_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Jason Zhang",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milliken_Park_parking_lot_panoramic,_April_2020.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0051",
       "title": "無人の駅前広場の記録",
