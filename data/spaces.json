@@ -1,7 +1,29 @@
 {
-  "nextSeq": 53,
-  "updatedAt": "2026-11-12T21:39:31.565Z",
+  "nextSeq": 54,
+  "updatedAt": "2026-11-13T21:05:51.390Z",
   "entries": [
+    {
+      "id": "LA-0053",
+      "title": "休憩室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-13T21:05:51.390Z",
+      "description": "休憩室。非常口の緑色の light だけが静かに灯っている。時間の感覚が失われるほど静かで、ただ照明の低い音だけが響く。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "静寂",
+        "深夜",
+        "空調音",
+        "夢の記憶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bainbridge_Mall_secondary_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "The Bushranger",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bainbridge_Mall_secondary_entrance.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0052",
       "title": "公園の東屋の記録",
