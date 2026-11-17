@@ -1,7 +1,29 @@
 {
-  "nextSeq": 55,
-  "updatedAt": "2026-11-16T23:35:41.341Z",
+  "nextSeq": 56,
+  "updatedAt": "2026-11-17T22:43:43.504Z",
   "entries": [
+    {
+      "id": "LA-0055",
+      "title": "24時間営業の洗濯店の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-17T22:43:43.504Z",
+      "description": "24時間営業の洗濯店。照明は生きているが、誰も使っていない。先ほどまで誰かがいたような温度が、椅子やカウンターに残っている。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "業務用空間",
+        "蛍光灯",
+        "深夜",
+        "退色"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/e/e1/2070_077-9_%2B_train_in_Wien_Westbahnhof%2C_2006_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Bahnfrend",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2070_077-9_%2B_train_in_Wien_Westbahnhof,_2006_(02).jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0054",
       "title": "団地の広場の記録",
