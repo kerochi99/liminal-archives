@@ -1,7 +1,29 @@
 {
-  "nextSeq": 56,
-  "updatedAt": "2026-11-17T22:43:43.504Z",
+  "nextSeq": 57,
+  "updatedAt": "2026-11-18T22:25:20.201Z",
   "entries": [
+    {
+      "id": "LA-0056",
+      "title": "駐車場の記録",
+      "category": "outdoor",
+      "categoryLabel": "屋外",
+      "recordedAt": "2026-11-18T22:25:20.201Z",
+      "description": "駐車場。ナトリウムランプの橙色の光だけが頼りだ。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "静寂",
+        "レムナント",
+        "退色",
+        "空調音"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/0/03/Kleman_Plaza_structure_outside.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Michael Rivera",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleman_Plaza_structure_outside.JPG",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0055",
       "title": "24時間営業の洗濯店の記録",
