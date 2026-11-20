@@ -1,7 +1,29 @@
 {
-  "nextSeq": 58,
-  "updatedAt": "2026-11-19T22:30:40.312Z",
+  "nextSeq": 59,
+  "updatedAt": "2026-11-20T22:03:24.416Z",
   "entries": [
+    {
+      "id": "LA-0058",
+      "title": "深夜の高速道路サービスエリアの記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-20T22:03:24.416Z",
+      "description": "深夜の高速道路サービスエリア。非常口の緑色の light だけが静かに灯っている。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。ガラス越しに見える向こうの部屋にも、同じ光景が続いている。",
+      "tags": [
+        "空調音",
+        "昭和レトロ",
+        "ノスタルジア",
+        "業務用空間"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/4/48/Empty%2C_Charing_Cross_Station_-_geograph.org.uk_-_4946944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "N Chadwick",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty,_Charing_Cross_Station_-_geograph.org.uk_-_4946944.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0057",
       "title": "空き地の記録",
