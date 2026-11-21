@@ -1,7 +1,27 @@
 {
-  "nextSeq": 59,
-  "updatedAt": "2026-11-20T22:03:24.416Z",
+  "nextSeq": 60,
+  "updatedAt": "2026-11-21T20:42:33.157Z",
   "entries": [
+    {
+      "id": "LA-0059",
+      "title": "オフィスフロアの記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-21T20:42:33.157Z",
+      "description": "オフィスフロア。ナトリウムランプの橙色の光だけが頼りだ。空気はわずかに湿り、埃とカーペットの匂いが混ざっている。天井のタイルに雨染みのような跡が規則的に並んでいる。",
+      "tags": [
+        "業務用空間",
+        "反復構造"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/5/5b/North_Acton_London%2C_Tube_station%2C_COVID-19_signs_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Kwh1050",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Acton_London,_Tube_station,_COVID-19_signs_2.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0058",
       "title": "深夜の高速道路サービスエリアの記録",
