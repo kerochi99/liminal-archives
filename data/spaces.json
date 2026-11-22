@@ -1,7 +1,27 @@
 {
-  "nextSeq": 60,
-  "updatedAt": "2026-11-21T20:42:33.157Z",
+  "nextSeq": 61,
+  "updatedAt": "2026-11-22T20:52:50.654Z",
   "entries": [
+    {
+      "id": "LA-0060",
+      "title": "図書室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-22T20:52:50.654Z",
+      "description": "図書室。ナトリウムランプの橙色の光だけが頼りだ。どの方向を見ても、出口は見当たらない。自動販売機の灯りだけが異様に鮮やかに浮いている。",
+      "tags": [
+        "静寂",
+        "蛍光灯"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/9/93/Former_A_X_Armani_Exchange%3B_Playground_Pier_Shops%3B_Atlantic_City_NJ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Larry Hachucka",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_A_X_Armani_Exchange;_Playground_Pier_Shops;_Atlantic_City_NJ.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0059",
       "title": "オフィスフロアの記録",
