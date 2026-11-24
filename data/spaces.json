@@ -1,7 +1,28 @@
 {
-  "nextSeq": 61,
-  "updatedAt": "2026-11-22T20:52:50.654Z",
+  "nextSeq": 62,
+  "updatedAt": "2026-11-24T01:57:31.456Z",
   "entries": [
+    {
+      "id": "LA-0061",
+      "title": "終電後のプラットフォームの記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-24T01:57:31.456Z",
+      "description": "終電後のプラットフォーム。照明は生きているが、誰も使っていない。どこかでBGMが途切れがちに流れているが、曲名は分からない。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "時間断絶",
+        "蛍光灯",
+        "静寂"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Berlin_Gesundbrunnen_station_lub_2026-02-07_img08_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Lukas Beck",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Gesundbrunnen_station_lub_2026-02-07_img08_snow.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0060",
       "title": "図書室の記録",
