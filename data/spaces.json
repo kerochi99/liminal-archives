@@ -1,7 +1,27 @@
 {
-  "nextSeq": 62,
-  "updatedAt": "2026-11-24T23:41:28.775Z",
+  "nextSeq": 63,
+  "updatedAt": "2026-11-25T23:25:10.151Z",
   "entries": [
+    {
+      "id": "LA-0062",
+      "title": "教室の記録",
+      "category": "indoor",
+      "categoryLabel": "屋内",
+      "recordedAt": "2026-11-25T23:25:10.151Z",
+      "description": "教室。照明は生きているが、誰も使っていない。どの方向を見ても、出口は見当たらない。床に落ちた一枚のチラシだけが、唯一の時間の手がかりだ。",
+      "tags": [
+        "ノスタルジア",
+        "蛍光灯"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/2/23/Empty_Classroom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Danslafrique",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Classroom.JPG",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0061",
       "title": "終電後のプラットフォームの記録",
