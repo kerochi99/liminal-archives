@@ -1,7 +1,29 @@
 {
-  "nextSeq": 63,
-  "updatedAt": "2026-11-26T23:25:22.238Z",
+  "nextSeq": 64,
+  "updatedAt": "2026-11-27T23:04:43.008Z",
   "entries": [
+    {
+      "id": "LA-0063",
+      "title": "無人の駅前広場の記録",
+      "category": "night",
+      "categoryLabel": "夜間",
+      "recordedAt": "2026-11-27T23:04:43.007Z",
+      "description": "無人の駅前広場。ナトリウムランプの橙色の光だけが頼りだ。壁紙は褪色し、同じ模様が永遠に繰り返されているように見える。時計の針は動いているように見えるが、何度確認しても同じ時刻を指す。",
+      "tags": [
+        "静寂",
+        "退色",
+        "深夜",
+        "夢の記憶"
+      ],
+      "visual": "https://upload.wikimedia.org/wikipedia/commons/3/31/Empty_streets_of_Thessaloniki_due_to_Coronavirus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": {
+        "creator": "Antonis Stamatis",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_streets_of_Thessaloniki_due_to_Coronavirus.jpg",
+        "provider": "Wikimedia Commons"
+      }
+    },
     {
       "id": "LA-0062",
       "title": "教室の記録",
